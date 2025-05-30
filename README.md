@@ -37,13 +37,18 @@ src/
 
 1. Clone the repository:
 ```bash
-git clone <repository-url>
+git clone https://github.com/tmstuckman/java-interview-template.git
 cd interview-template
 ```
 
-2. Build the project:
+2. Build the project without testing (sanity check):
+Mac:
 ```bash
-./gradlew build
+./gradlew build -x test  # Uses Gradle 8.5 wrapper
+```
+Windows:
+```bash
+gradlew.bat build -x test  # Uses Gradle 8.5 wrapper
 ```
 
 ## Running Tests
@@ -54,6 +59,7 @@ cd interview-template
 ```
 
 ### Specific Challenge Tests
+Mac:
 ```bash
 # FizzBuzz
 ./gradlew test --tests "com.interview.fizzbuzz.FizzBuzzTest"
@@ -63,6 +69,18 @@ cd interview-template
 
 # LRU Cache
 ./gradlew test --tests "com.interview.lrucache.LRUCacheTest"
+```
+
+Windows:
+```bash
+# FizzBuzz
+gradlew.bat test --tests "com.interview.fizzbuzz.FizzBuzzTest"
+
+# Reverse Words
+gradlew.bat test --tests "com.interview.reversewords.WordReverserTest"
+
+# LRU Cache
+gradlew.bat test --tests "com.interview.lrucache.LRUCacheTest"
 ```
 
 ## Challenges
