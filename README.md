@@ -42,21 +42,18 @@ cd interview-template
 ```
 
 2. Build the project without testing (sanity check):
+
 Mac:
 ```bash
 ./gradlew build -x test  # Uses Gradle 8.5 wrapper
 ```
+
 Windows:
 ```bash
 gradlew.bat build -x test  # Uses Gradle 8.5 wrapper
 ```
 
 ## Running Tests
-
-### All Tests
-```bash
-./gradlew test
-```
 
 ### Specific Challenge Tests
 Mac:
